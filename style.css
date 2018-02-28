@@ -2,18 +2,20 @@
 
 html,
 body {
-  margin: 1%;
+  margin: 0;
   height: 100%;
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
 nav {
-  width:100%;
+  width: 100%;
   margin: 0 auto;
   border-bottom: 3px solid black;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1em;
+  position: fixed;
+  background: white;
 }
 
 nav a {
@@ -59,6 +61,3 @@ nav a {
 img {
   height: 100px;
   width: 85px;
-/* body {
-  max-width: 420px;
-} */
