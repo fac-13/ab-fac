@@ -1,5 +1,57 @@
 /* CSS FOR FORM SECTION  */
 
+html,
+body {
+  margin: 1%;
+  height: 100%;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+nav {
+  width:100%;
+  margin: 0 auto;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 1em;
+    text-transform: uppercase;
+    font-size: 0.6em;
+  }
+
+@media screen and (min-width:768px) {
+  nav {
+    font-size: 1.5em;
+  }
+
+}
+
+#home {
+  height: 95%;
+  background-color: linen;
+  margin:auto;
+  padding:15% 5% 0 5%;
+}
+
+#home h1 {
+  text-align: center;
+  color: green;
+}
+
+#home figure {
+      display: flex;
+}
+
+#logo {
+      border-radius: 50%;
+      margin: auto;
+
+}
+
 #form-message {
   height: 100px;
 }
@@ -7,4 +59,6 @@
 img {
   height: 100px;
   width: 85px;
-}
+/* body {
+  max-width: 420px;
+} */
