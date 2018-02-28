@@ -12,12 +12,14 @@ body {
 }
 
 nav {
-  width:100%;
+  width: 100%;
   margin: 0 auto;
   border-bottom: 3px solid black;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1em;
+  position: fixed;
+  background: white;
 }
 
 nav a {
@@ -70,6 +72,3 @@ nav a {
 #about img {
   height: 100px;
   width: 85px;
-/* body {
-  max-width: 420px;
-} */
