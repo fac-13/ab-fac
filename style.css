@@ -2,9 +2,8 @@
 
 html,
 body {
-  margin: 0;
+  margin: 1%;
   height: 100%;
-  width :100%;
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
@@ -28,6 +27,28 @@ nav a {
   nav {
     font-size: 1.5em;
   }
+
+}
+
+#home {
+  height: 95%;
+  background-color: linen;
+  margin:auto;
+  padding:15% 5% 0 5%;
+}
+
+#home h1 {
+  text-align: center;
+  color: green;
+}
+
+#home figure {
+      display: flex;
+}
+
+#logo {
+      border-radius: 50%;
+      margin: auto;
 
 }
 
