@@ -1,7 +1,4 @@
-/* body {
-  max-width: 420px;
-} */
-
+/* CSS FOR FORM SECTION  */
 
 html,
 body {
@@ -33,3 +30,14 @@ nav a {
   }
 
 }
+
+#form-message {
+  height: 100px;
+}
+
+img {
+  height: 100px;
+  width: 85px;
+/* body {
+  max-width: 420px;
+} */
