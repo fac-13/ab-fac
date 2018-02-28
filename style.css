@@ -1,0 +1,26 @@
+/* body {
+  max-width: 420px;
+} */
+
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width :100%;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+nav {
+  width:100%;
+  margin: 0 auto;
+  border: 3px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 1em;
+    text-transform: uppercase;
+  }
