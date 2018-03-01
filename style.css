@@ -32,52 +32,65 @@ nav a {
   nav {
     font-size: 1.5em;
   }
-  .gallery {
+  .gallery, .profile {
     display: flex;
     justify-content: center;
   }
 
 }
 
-#home {
-  height: 95%;
-  background-color: linen;
+.home {
   margin:auto;
   padding:15% 5% 0 5%;
+  background-color: linen;
 }
 
-#home h1 {
+.home h1 {
   text-align: center;
   color: green;
 }
 
-#home figure {
+.home figure {
       display: flex;
 }
 
 #logo {
-      border-radius: 50%;
-      margin: auto;
 
 }
 
-#about {
+#logo img{
+      border-radius: 50%;
+      margin: 10% auto;
+      width: 80%;
+      height: 80%;
+      max-width: 512px;
+
+
+}
+
+.about {
   width: 90%;
   margin: auto;
 }
 
-#about img {
+.about img {
   height: 100px;
   width: 85px;
 }
 
 
-#team {
+.team {
   width: 90%;
   margin: auto;
 }
 
-#contact {
+
+.team figure img{
+  width: 128px;
+  height: 128px;
+}
+
+.contact {
   width: 90%;
   margin: auto;
 }
@@ -86,13 +99,9 @@ nav a {
   height: 100px;
 }
 
-#gallery {
-
-}
-
 
 @media screen and (min-width: 768px) {
-    #about, #team, #contact {
+    .about, .team, .contact {
       width: 70%;
     }
 }
