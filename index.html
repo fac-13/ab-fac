@@ -14,13 +14,16 @@
 </head>
 
 <body>
+    <h1 class="hidden">We Are AbFAC</h1>
+    <a href="#home" class="skip-menu">Skip menu and go to main content</a>
     <nav>
+        <h1 class="hidden">Menu Bar</h1>
         <a href="#about">About Us</a>
         <a href="#team">Our Team</a>
         <a href="#contact">Contact Us</a>
     </nav>
 
-    <section class="home">
+    <section id="home" class="home">
         <h1>AB-FAC-ULOUS</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus id quos dignissimos dolore quae expedita possimus
             sed necessitatibus ullam. Sunt nobis explicabo fugiat aliquam quae blanditiis. Magni, consectetur quibusdam!
@@ -31,7 +34,7 @@
     </section>
 
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <h3>ABOUT</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus id quos dignissimos dolore quae expedita
                 possimus sed necessitatibus ullam. Sunt nobis explicabo fugiat aliquam quae blanditiis. Magni, consectetur
@@ -39,6 +42,7 @@
             </p>
 
             <section class="gallery">
+                <h4 class="hidden">Portfolio</h4>
                 <figure class="portfolio">
                     <img src="Assets/pic.png" alt="">
                     <figcaption>description of work</figcaption>
@@ -59,42 +63,30 @@
 
         </section>
 
-        <section class="team">
+        <section id="team" class="team">
             <h3>THE ABFAC TEAM</h3>
-
-            <article class="profile">
-
-
+            <div class="profile">
                 <figure class="profile_picture">
                     <img src="Assets/eade.png" alt="">
                     <figcaption>Eade</figcaption>
                 </figure>
-
-
-
                 <figure class="profile_picture">
                     <img src="Assets/jenna.png" alt="">
                     <figcaption>Eade</figcaption>
                 </figure>
-
-
-
                 <figure class="profile_picture">
                     <img src="Assets/nico.png" alt="">
                     <figcaption>Eade</figcaption>
                 </figure>
-
-
-
                 <figure class="profile_picture">
                     <img src="Assets/vanessa.png" alt="">
                     <figcaption>Eade</figcaption>
                 </figure>
-            </article>
+            </div>
 
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h3>CONTACT US</h3>
             <form action="https://formspree.io/eadehem@hotmail.com" method="post">
                 <p>
@@ -110,12 +102,11 @@
                 <button id="send" value="send">Send</button>
                 <input type="hidden" name="_next" value="https://fac-13.github.io/ab-fac/" />
 
-                <div id="modal">
+                <div id="modal" role="dialog">
                     <p>Thank you for submitting the form</p>
                     <p>You are being redirected to complete the form submission</p>
                     <button id="submit" type="submit" value="submit">Submit</button>
                     <button id="close" type="reset" value="close">Close Alert</button>
-
                 </div>
 
             </form>
