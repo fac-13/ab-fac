@@ -22,15 +22,14 @@ nav {
 }
 
 #abfac {
-position: fixed;
-z-index: 1;
-font-family: "bungee inline";
-text-decoration: none;
-font-size: 2em;
-color: sandybrown;
-padding: 5px 10px;
+  position: fixed;
+  z-index: 1;
+  font-family: "bungee inline";
+  text-decoration: none;
+  font-size: 2em;
+  color: sandybrown;
+  padding: 5px 10px;
 }
-
 
 nav a {
   text-decoration: none;
@@ -47,16 +46,16 @@ nav a {
   .gallery,
   .profile {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
 h3 {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   text-align: center;
-    font-family: 'Bungee Inline', cursive;
-    font-size: 3em;
-    color: grey;
+  font-family: "Bungee Inline", cursive;
+  font-size: 3em;
+  color: grey;
 }
 
 figure {
@@ -70,49 +69,46 @@ figcaption {
 }
 
 .home {
-  margin:auto;
+  margin: auto;
   padding: 0% 5% 20% 5%;
   background-color: linen;
 }
 
 .home h1 {
   text-align: center;
-  font-family: 'Bungee Inline', cursive;
+  font-family: "Bungee Inline", cursive;
   font-size: 5em;
-    margin: 0;
-    color: sandybrown;
+  margin: 0;
+  color: sandybrown;
 }
 
 .home p {
   width: 50%;
-      margin: auto;
-      text-align: center;
-      letter-spacing: 5px;
-      line-height: 2em;
-      color: brown;
-      font-size: .7em;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 2em;
+  color: brown;
+  font-size: 0.7em;
 }
 
 .home figure {
   display: flex;
 }
 
-
-
-#logo img{
-      border-radius: 50%;
-      margin: 13% auto 3% auto;
-      width: 60%;
-      height: 60%;
-      max-width: 200px;
+#logo img {
+  border-radius: 50%;
+  margin: 13% auto 3% auto;
+  width: 60%;
+  height: 60%;
+  max-width: 200px;
 }
 
 @media screen and (max-width: 425px) {
-  #logo img{
+  #logo img {
     padding-top: 10%;
   }
 }
-
 
 .about {
   width: 90%;
@@ -120,12 +116,12 @@ figcaption {
 }
 
 .about img {
-  height: 100px;
-  width: 85px;
-}
-
-.portfolio {
-  text-align: center;
+  width: 100%;
+  height: 250px;
+  max-width: 200px;
+  margin: 1rem 1rem 0.5rem 1rem;
+  border: solid 5px gray;
+  border-radius: 3px;
 }
 
 .team-bkg {
@@ -147,21 +143,20 @@ figcaption {
 }
 
 @media screen and (min-width: 1440px) {
-  .team figure img{
+  .team figure img {
     width: 256px;
     height: 256px;
   }
 }
 
-
 @media screen and (max-width: 760px) {
   #abfac {
     display: none;
   }
-.home h1{
+  .home h1 {
     font-size: 3em;
   }
-  h3{
+  h3 {
     font-size: 2em;
   }
 }
@@ -172,10 +167,9 @@ figcaption {
   text-align: center;
 }
 
-
 #form-email,
 #form-name,
- #form-message {
+#form-message {
   width: 60%;
   max-width: 500px;
   font-size: 1em;
@@ -184,12 +178,11 @@ figcaption {
   letter-spacing: 0.1em;
   font-family: Montserrat, Helvetica, sans-serif;
   background-color: linen;
-
 }
 
- #form-message{
-   height: 200px;
- }
+#form-message {
+  height: 200px;
+}
 
 .hidden {
   display: none;
@@ -211,15 +204,17 @@ figcaption {
   padding: 1rem;
 }
 
- #form-message {
+#form-message {
   height: 200px;
 }
 
-#send, #submit, #close {
-font-size: .8em;
-letter-spacing: 0.1em;
-padding: 10px;
-background-color: linen;
+#send,
+#submit,
+#close {
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  background-color: linen;
 }
 
 @media screen and (min-width: 768px) {
@@ -262,18 +257,18 @@ background-color: linen;
 }
 
 .credits {
-    border-top: 1px solid lightgrey;
-      padding: 5px;
-      background: whitesmoke;
-      display: flex;
-      justify-content: flex-end;
+  border-top: 1px solid lightgrey;
+  padding: 5px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-      font-size: 90%;
-    }
-    .team figcaption {
-      font-size: 85%;
-    }
+  body {
+    font-size: 90%;
+  }
+  .team figcaption {
+    font-size: 85%;
+  }
 }
