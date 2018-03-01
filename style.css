@@ -2,12 +2,12 @@
 
 html,
 body {
+  margin: 0;
   height: 100%;
   font-family: Montserrat, Helvetica, sans-serif;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 70%;
 }
 
 nav {
@@ -59,13 +59,37 @@ nav a {
   margin: auto;
 }
 
+#about {
+  width: 90%;
+  margin: auto;
+}
+
+#about img {
+  height: 100px;
+  width: 85px;
+}
+
+#team {
+  width: 90%;
+  margin: auto;
+}
+
+#contact {
+  width: 90%;
+  margin: auto;
+}
+
 #form-message {
   height: 100px;
 }
 
 #gallery {
 }
-#about img {
-  height: 100px;
-  width: 85px;
+
+@media screen and (min-width: 768px) {
+  #about,
+  #team,
+  #contact {
+    width: 70%;
+  }
 }
