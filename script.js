@@ -1,20 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Write your code below only:
-  // global variables 
+document.addEventListener("DOMContentLoaded", function() {
+  // global variables
   var modal = document.querySelector("#modal");
   var overlay = document.querySelector("#overlay");
   var previouslyFocusedEl;
 
   const submit = document.querySelector("#submit");
   const send = document.querySelector("#send");
+  const close = document.querySelector("#close");
 
   send.addEventListener("click", function() {
     event.preventDefault();
     alertMessageSubmit();
   });
-  
+
+  overlay.addEventListener("click", closeModal);
+  close.addEventListener("click", closeModal);
 });
 
+// OPENS CONTACT FORM SUBMISSION ALERT MODAL //
 function alertMessageSubmit() {
   previouslyFocusedEl = document.activeElement;
 
@@ -25,31 +28,30 @@ function alertMessageSubmit() {
     'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, tabindex:not([tabindex="-1"])';
   var focusableEls = modal.querySelectorAll(focusableElsString);
 
-  var Onlyfocusable = focusableEls[0];
+  var firstFocusable = focusableEls[0];
+  var lastFocusable = focusableEls[1];
 
-  Onlyfocusable.focus();
+  firstFocusable.focus();
 
   modal.addEventListener("keydown", trapFocus);
 
   function trapFocus(e) {
-
     if (e.keyCode == 9) {
       if (e.shiftKey) {
-        if (document.activeElement === Onlyfocusable) {
+        if (document.activeElement === firstFocusable) {
           event.preventDefault();
-          Onlyfocusable.focus();
+          lastFocusable.focus();
         }
       } else {
-        if (document.activeElement === Onlyfocusable) {
+        if (document.activeElement === lastFocusable) {
           event.preventDefault();
-          Onlyfocusable.focus();
+          firstFocusable.focus();
         }
       }
     }
 
     if (e.keyCode == 27) closeModal();
   }
-
 }
 function closeModal() {
   modal.style.display = "none";

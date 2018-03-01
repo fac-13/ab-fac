@@ -32,15 +32,16 @@ nav a {
   nav {
     font-size: 1.5em;
   }
-  .gallery, .profile {
+  .gallery,
+  .profile {
     display: flex;
     justify-content: center;
   }
 }
 
 .home {
-  margin:auto;
-  padding:15% 5% 0 5%;
+  margin: auto;
+  padding: 15% 5% 0 5%;
   background-color: linen;
 }
 
@@ -50,21 +51,18 @@ nav a {
 }
 
 .home figure {
-      display: flex;
+  display: flex;
 }
 
 #logo {
-
 }
 
-#logo img{
-      border-radius: 50%;
-      margin: 10% auto;
-      width: 80%;
-      height: 80%;
-      max-width: 512px;
-
-
+#logo img {
+  border-radius: 50%;
+  margin: 10% auto;
+  width: 80%;
+  height: 80%;
+  max-width: 512px;
 }
 
 .about {
@@ -77,14 +75,12 @@ nav a {
   width: 85px;
 }
 
-
 .team {
   width: 90%;
   margin: auto;
 }
 
-
-.team figure img{
+.team figure img {
   width: 128px;
   height: 128px;
 }
@@ -98,13 +94,34 @@ nav a {
   height: 100px;
 }
 
+.hidden {
+  display: none;
+}
+
+.skip-menu {
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+.skip-menu:focus {
+  color: darkorchid;
+  background-color: aliceblue;
+  border: solid 5px darkorchid;
+  z-index: 1;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 768px) {
-    .about, .team, .contact {
-      width: 70%;
-    }
+  .about,
+  .team,
+  .contact {
+    width: 70%;
+  }
 }
 
 /*Modal styling*/
+
 #modal {
   border: solid 1px red;
   display: none;
