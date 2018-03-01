@@ -169,12 +169,14 @@ figcaption {
   border: solid 5px darkorchid;
   z-index: 1;
   padding: 1rem;
+}
+
  #form-message {
   height: 200px;
 }
 
-#send {
-  font-size: .8em;
+#send, #submit, #close {
+font-size: .8em;
 letter-spacing: 0.1em;
 padding: 10px;
 background-color: linen;
@@ -191,11 +193,11 @@ background-color: linen;
 /*Modal styling*/
 
 #modal {
-  border: solid 1px red;
+  border: 2px solid lightgrey;
   display: none;
   z-index: 10;
   position: fixed;
-  background-color: white;
+  background-color: #fffcf9;
   padding: 2rem;
   left: 0;
   right: 0;
@@ -213,6 +215,10 @@ background-color: linen;
   position: fixed;
   display: none;
   z-index: 5;
+}
+
+#submit {
+  margin-right: 1em;
 }
 
 @media screen and (max-width: 1024px) {
