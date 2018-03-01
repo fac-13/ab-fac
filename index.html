@@ -72,11 +72,18 @@
                 <p>
                     <textarea id="form-message" type="text" name="message" aria-label="Your Message" placeholder="Your Message"></textarea>
                 </p>
-                <button id="send" type="submit" value="Send">Submit</button>
+                <button id="send" value="send">Send</button>
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+
+                <div id="modal">
+                    <p>Thank you for submitting the form</p>
+                    <p>You are being redirected to complete the form submission</p>
+                    <button id="submit" type="submit" value="submit">Submit</button>
+                </div>
 
             </form>
         </section>
+        <div id="overlay"></div>
         <br>
         <br>
         <br>
