@@ -2,12 +2,12 @@
 
 html,
 body {
-  margin: 0;
+  margin: -0.5em 0;
   height: 100%;
   font-family: Montserrat, Helvetica, sans-serif;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
+  text-align: left;
 }
 
 nav {
@@ -39,35 +39,64 @@ nav a {
   }
 }
 
+h3 {
+  padding-bottom: .5em;
+  text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 3em;
+    color: grey;
+}
+
+figure {
+  text-align: center;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+
+figcaption {
+  text-align: center;
+}
+
 .home {
-  margin: auto;
-  padding: 15% 5% 0 5%;
+  margin:auto;
+  padding: 0% 5% 20% 5%;
   background-color: linen;
 }
 
 .home h1 {
   text-align: center;
-  color: green;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 10em;
+    margin: 0;
+        color: sandybrown;
+}
+
+.home p {
+  width: 60%;
+      margin: auto;
+      text-align: center;
+      letter-spacing: 5px;
+      line-height: 3em;
+      color: brown;
 }
 
 .home figure {
   display: flex;
 }
 
-#logo {
-}
 
-#logo img {
-  border-radius: 50%;
-  margin: 10% auto;
-  width: 80%;
-  height: 80%;
-  max-width: 512px;
+
+#logo img{
+      border-radius: 50%;
+      margin: 18% auto 5% auto;
+      width: 80%;
+      height: 80%;
+      max-width: 256px;
 }
 
 .about {
   width: 90%;
-  margin: auto;
+  margin: 20% auto;
 }
 
 .about img {
@@ -75,23 +104,53 @@ nav a {
   width: 85px;
 }
 
+.portfolio {
+  text-align: center;
+}
+
+.team-bkg {
+  width: 100%;
+  margin: 0;
+  padding: 10% 0;
+  background: lavenderblush;
+}
+
 .team {
   width: 90%;
-  margin: auto;
+  margin: 10% auto;
 }
 
 .team figure img {
   width: 128px;
   height: 128px;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1440px) {
+  .team figure img{
+    width: 256px;
+    height: 256px;
+  }
 }
 
 .contact {
   width: 90%;
-  margin: auto;
+  margin: 20% auto;
+  text-align: center;
 }
 
-#form-message {
-  height: 100px;
+
+#form-email,
+#form-name,
+ #form-message {
+  width: 60%;
+  font-size: 1em;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  letter-spacing: 0.1em;
+  font-family: Montserrat, Helvetica, sans-serif;
+  background-color: #fffcf9;
+
 }
 
 .hidden {
@@ -110,6 +169,15 @@ nav a {
   border: solid 5px darkorchid;
   z-index: 1;
   padding: 1rem;
+ #form-message {
+  height: 200px;
+}
+
+#send {
+  font-size: .8em;
+letter-spacing: 0.1em;
+padding: 10px;
+background-color: linen;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,4 +213,13 @@ nav a {
   position: fixed;
   display: none;
   z-index: 5;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+      font-size: 90%;
+    }
+    .team figcaption {
+      font-size: 85%;
+    }
 }
