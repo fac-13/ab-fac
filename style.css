@@ -8,7 +8,6 @@ body {
   margin-left: auto;
   text-align: center;
   width: 70%;
-
 }
 
 nav {
@@ -23,13 +22,13 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
-    margin: 1em;
-    text-transform: uppercase;
-    font-size: 0.6em;
-  }
+  text-decoration: none;
+  margin: 1em;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   nav {
     font-size: 1.5em;
   }
@@ -37,14 +36,13 @@ nav a {
     display: flex;
     justify-content: center;
   }
-
 }
 
 #home {
   height: 95%;
   background-color: linen;
-  margin:auto;
-  padding:15% 5% 0 5%;
+  margin: auto;
+  padding: 15% 5% 0 5%;
 }
 
 #home h1 {
@@ -53,13 +51,12 @@ nav a {
 }
 
 #home figure {
-      display: flex;
+  display: flex;
 }
 
 #logo {
-      border-radius: 50%;
-      margin: auto;
-
+  border-radius: 50%;
+  margin: auto;
 }
 
 #form-message {
@@ -67,8 +64,8 @@ nav a {
 }
 
 #gallery {
-
 }
 #about img {
   height: 100px;
   width: 85px;
+}

@@ -64,13 +64,13 @@
             <h3>CONTACT US</h3>
             <form action="https://formspree.io/eadehem@hotmail.com" method="post">
                 <p>
-                    <input id="form-name" type="text" name="name" placeholder='Your Name'></input>
+                    <input id="form-name" type="text" name="name" aria-labelledby="Name" placeholder='Your Name'></input>
                 </p>
                 <p>
-                    <input id="form-email" type="email" name="email" placeholder="Your Email"></input>
+                    <input id="form-email" type="email" name="email" aria-labelledby="Email" placeholder="Your Email"></input>
                 </p>
                 <p>
-                    <textarea id="form-message" type="text" name="message" placeholder="Your Message"></textarea>
+                    <textarea id="form-message" type="text" name="message" aria-label="Your Message" placeholder="Your Message"></textarea>
                 </p>
                 <button id="send" type="submit" value="Send">Submit</button>
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
