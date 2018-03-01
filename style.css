@@ -261,6 +261,14 @@ background-color: linen;
   margin-right: 1em;
 }
 
+.credits {
+    border-top: 1px solid lightgrey;
+      padding: 5px;
+      background: whitesmoke;
+      display: flex;
+      justify-content: flex-end;
+}
+
 @media screen and (max-width: 1024px) {
     body {
       font-size: 90%;
