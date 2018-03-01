@@ -35,16 +35,16 @@ nav a {
   .gallery,
   .profile {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
 h3 {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   text-align: center;
-    font-family: 'Bungee Inline', cursive;
-    font-size: 3em;
-    color: grey;
+  font-family: "Bungee Inline", cursive;
+  font-size: 3em;
+  color: grey;
 }
 
 figure {
@@ -58,40 +58,38 @@ figcaption {
 }
 
 .home {
-  margin:auto;
+  margin: auto;
   padding: 0% 5% 20% 5%;
   background-color: linen;
 }
 
 .home h1 {
   text-align: center;
-  font-family: 'Bungee Inline', cursive;
+  font-family: "Bungee Inline", cursive;
   font-size: 10em;
-    margin: 0;
-        color: sandybrown;
+  margin: 0;
+  color: sandybrown;
 }
 
 .home p {
   width: 60%;
-      margin: auto;
-      text-align: center;
-      letter-spacing: 5px;
-      line-height: 3em;
-      color: brown;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 3em;
+  color: brown;
 }
 
 .home figure {
   display: flex;
 }
 
-
-
-#logo img{
-      border-radius: 50%;
-      margin: 18% auto 5% auto;
-      width: 80%;
-      height: 80%;
-      max-width: 256px;
+#logo img {
+  border-radius: 50%;
+  margin: 18% auto 5% auto;
+  width: 80%;
+  height: 80%;
+  max-width: 256px;
 }
 
 .about {
@@ -100,12 +98,12 @@ figcaption {
 }
 
 .about img {
-  height: 100px;
-  width: 85px;
-}
-
-.portfolio {
-  text-align: center;
+  width: 100%;
+  height: 250px;
+  max-width: 200px;
+  margin: 1rem 1rem 0.5rem 1rem;
+  border: solid 5px gray;
+  border-radius: 3px;
 }
 
 .team-bkg {
@@ -127,7 +125,7 @@ figcaption {
 }
 
 @media screen and (min-width: 1440px) {
-  .team figure img{
+  .team figure img {
     width: 256px;
     height: 256px;
   }
@@ -139,10 +137,9 @@ figcaption {
   text-align: center;
 }
 
-
 #form-email,
 #form-name,
- #form-message {
+#form-message {
   width: 60%;
   font-size: 1em;
   padding: 10px;
@@ -150,7 +147,6 @@ figcaption {
   letter-spacing: 0.1em;
   font-family: Montserrat, Helvetica, sans-serif;
   background-color: #fffcf9;
-
 }
 
 .hidden {
@@ -171,15 +167,17 @@ figcaption {
   padding: 1rem;
 }
 
- #form-message {
+#form-message {
   height: 200px;
 }
 
-#send, #submit, #close {
-font-size: .8em;
-letter-spacing: 0.1em;
-padding: 10px;
-background-color: linen;
+#send,
+#submit,
+#close {
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  background-color: linen;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,10 +220,10 @@ background-color: linen;
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-      font-size: 90%;
-    }
-    .team figcaption {
-      font-size: 85%;
-    }
+  body {
+    font-size: 90%;
+  }
+  .team figcaption {
+    font-size: 85%;
+  }
 }
