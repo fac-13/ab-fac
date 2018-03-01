@@ -15,25 +15,28 @@
 </head>
 
 <body>
+    <h1 class="hidden">We Are AbFAC</h1>
+    <a href="#home" class="skip-menu">Skip menu and go to main content</a>
     <nav>
+        <h1 class="hidden">Menu Bar</h1>
         <a href="#about">About Us</a>
         <a href="#team">Our Team</a>
         <a href="#contact">Contact Us</a>
     </nav>
 
-    <section class="home">
+    <section id = "home" class="home">
       <figure id="logo">
           <img src="Assets/abfac.png" alt="Our AbFACulous Team Logo">
       </figure>
         <h1>AB-FAC</h1>
-        <h4>
+        <p>
           AN ABSOLUTLY FACULOUS TEAM OF DEVELOPERS THAT TAKES YOUR ONLINE WORRIES AWAY
-        </h4>
+        </p>
 
     </section>
 
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <h3>ABOUT</h3>
             <p>
               We are a dedicated team of passionate web developers who bring energy, ideas and love to their work.
@@ -41,6 +44,7 @@
             </p>
 
             <section class="gallery">
+                <h4 class="hidden">Portfolio</h4>
                 <figure class="portfolio">
                     <img src="Assets/pic.png" alt="">
                     <figcaption>description of work</figcaption>
@@ -109,23 +113,32 @@
         </section>
 </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h3>CONTACT US</h3>
             <form action="https://formspree.io/eadehem@hotmail.com" method="post">
                 <p>
-                    <input id="form-name" type="text" name="name" placeholder='Your Name'></input>
+                    <label></label>
+                    <input id="form-name" type="text" aria-label="Name" placeholder='Your Name'></input>
                 </p>
                 <p>
-                    <input id="form-email" type="email" name="email" placeholder="Your Email"></input>
+                    <input id="form-email" type="email" aria-label="Email" placeholder="Your Email"></input>
                 </p>
                 <p>
-                    <textarea id="form-message" type="text" name="message" placeholder="Your Message"></textarea>
+                    <textarea id="form-message" type="text" name="message" aria-label="Your Message" placeholder="Your Message"></textarea>
                 </p>
-                <button id="send" type="submit" value="Send">Submit</button>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+                <button id="send" value="send">Send</button>
+                <input type="hidden" name="_next" value="https://fac-13.github.io/ab-fac/" />
+
+                <div id="modal" role="dialog">
+                    <p>Thank you for submitting the form</p>
+                    <p>You are being redirected to complete the form submission</p>
+                    <button id="submit" type="submit" value="submit">Submit</button>
+                    <button id="close" type="reset" value="close">Close Alert</button>
+                </div>
 
             </form>
         </section>
+        <div id="overlay"></div>
         <br>
         <br>
         <br>

@@ -22,21 +22,21 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
-    margin: 1em;
-    text-transform: uppercase;
-    font-size: 0.6em;
-  }
+  text-decoration: none;
+  margin: 1em;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   nav {
     font-size: 1.5em;
   }
-  .gallery, .profile {
+  .gallery,
+  .profile {
     display: flex;
     justify-content: center;
   }
-
 }
 
 h3 {
@@ -71,7 +71,7 @@ figcaption {
         color: sandybrown;
 }
 
-.home h4 {
+.home p {
   width: 60%;
       margin: auto;
       text-align: center;
@@ -81,7 +81,7 @@ figcaption {
 }
 
 .home figure {
-      display: flex;
+  display: flex;
 }
 
 
@@ -120,8 +120,7 @@ figcaption {
   margin: 10% auto;
 }
 
-
-.team figure img{
+.team figure img {
   width: 128px;
   height: 128px;
   margin-bottom: 2em;
@@ -154,6 +153,22 @@ figcaption {
 
 }
 
+.hidden {
+  display: none;
+}
+
+.skip-menu {
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+.skip-menu:focus {
+  color: darkorchid;
+  background-color: aliceblue;
+  border: solid 5px darkorchid;
+  z-index: 1;
+  padding: 1rem;
  #form-message {
   height: 200px;
 }
@@ -166,9 +181,38 @@ background-color: linen;
 }
 
 @media screen and (min-width: 768px) {
-    .about, .team, .contact {
-      width: 70%;
-    }
+  .about,
+  .team,
+  .contact {
+    width: 70%;
+  }
+}
+
+/*Modal styling*/
+
+#modal {
+  border: solid 1px red;
+  display: none;
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  padding: 2rem;
+  left: 0;
+  right: 0;
+  margin: 3em;
+  top: 30%;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  z-index: 5;
 }
 
 @media screen and (max-width: 1024px) {
