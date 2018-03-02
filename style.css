@@ -94,9 +94,6 @@ figcaption {
   font-size: 0.7em;
 }
 
-.home figure {
-  display: flex;
-}
 
 #logo img {
   border-radius: 50%;
@@ -112,10 +109,20 @@ figcaption {
   }
 }
 
-.about {
-  width: 90%;
-  margin: 20% auto;
+#about, #team, #contact {
+  padding: 5% 0;
 }
+
+
+.about, .team, .contact {
+  width: 90%;
+  margin: 10% auto;
+}
+
+.contact {
+  text-align: center;
+}
+
 
 .about img {
   width: 100%;
@@ -126,17 +133,12 @@ figcaption {
   border-radius: 3px;
 }
 
-.team-bkg {
+#team {
   width: 100%;
   margin: 0;
-  padding: 10% 0;
   background: lavenderblush;
 }
 
-.team {
-  width: 90%;
-  margin: 10% auto;
-}
 
 .team figure img {
   width: 128px;
@@ -161,12 +163,6 @@ figcaption {
   h3 {
     font-size: 2em;
   }
-}
-
-.contact {
-  width: 90%;
-  margin: 20% auto;
-  text-align: center;
 }
 
 #form-email,
