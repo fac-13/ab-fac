@@ -56,6 +56,7 @@ h3 {
   font-family: "Bungee Inline", cursive;
   font-size: 3em;
   color: grey;
+  font-weight: 400;
 }
 
 figure {
@@ -79,7 +80,8 @@ figcaption {
   font-family: "Bungee Inline", cursive;
   font-size: 5em;
   margin: 0;
-  color: sandybrown;
+  color: #BF5700;
+  font-weight: 400;
 }
 
 .home p {
