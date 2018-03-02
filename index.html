@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Ab Fab Team</title>
-    <meta name="UTF-8">
-    <meta author="Eade, Jenna, Nicos, Vanessa" />
-    <meta description="A site dedicated to our faboulous project team" />
+    <title>Ab Fac Team</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eade, Jenna, Nicos, Vanessa" />
+    <meta name="description" content="A site dedicated to our faboulous project team" />
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton" rel="stylesheet">
-    <script src='script.js'></script>
+    <script type="text/javascript" src='script.js' async></script>
 </head>
 
 <body>
@@ -90,7 +90,7 @@
                     <h3 class="hidden">Our team</h3>
 
                     <figure class="profile_picture">
-                        <img src="Assets/eade.png" alt="">
+                        <img src="Assets/eade.png" alt="Eade profile picture">
                         <figcaption>
                             Our faboulous Executive Designer,
                             <strong> Eade </strong>, can transform your website from a look-like-everything-else site to a work of
@@ -100,7 +100,7 @@
 
 
                     <figure class="profile_picture">
-                        <img src="Assets/jenna.png" alt="">
+                        <img src="Assets/jenna.png" alt="Jennah profile picture">
                         <figcaption>
                             Our awesome Media and Animation guru,
                             <strong> Jennah </strong>, will transform the NAH! into WOW! with those final touches of effects, animations
@@ -110,7 +110,7 @@
 
 
                     <figure class="profile_picture">
-                        <img src="Assets/nico.png" alt="">
+                        <img src="Assets/nico.png" alt="Nico profile picture">
                         <figcaption>
                             Our amazing Security Expert and Tech Engineer,
                             <strong> Nico </strong>, takes care of your site's security and back-end engineering and makes sure those
@@ -120,7 +120,7 @@
 
 
                     <figure class="profile_picture">
-                        <img src="Assets/vanessa.png" alt="">
+                        <img src="Assets/vanessa.png" alt="Vanessa profile picture">
                         <figcaption>
                             Our super SCRUM master,
                             <strong> Vanessa </strong>, can help kick off your website with careful planning, business advice and
@@ -137,13 +137,13 @@
             <form action="https://formspree.io/eadehem@hotmail.com" method="post">
                 <p>
                     <label></label>
-                    <input id="form-name" type="text" aria-label="Name" placeholder='Your Name'></input>
+                    <input id="form-name" type="text" aria-labelledby="form-name" placeholder='Your Name' required></input>
                 </p>
                 <p>
-                    <input id="form-email" type="email" aria-label="Email" placeholder="Your Email"></input>
+                    <input id="form-email" type="email" aria-labelledby="Email" placeholder="Your Email" required></input>
                 </p>
                 <p>
-                    <textarea id="form-message" type="text" name="message" aria-label="Your Message" placeholder="Your Message"></textarea>
+                    <textarea id="form-message" name="message" aria-labelledby="Your Message" placeholder="Your Message" required></textarea>
                 </p>
                 <button id="send" value="send">Send</button>
                 <input type="hidden" name="_next" value="https://fac-13.github.io/ab-fac/" />
