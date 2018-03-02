@@ -10,38 +10,49 @@ body {
   text-align: left;
 }
 
+/* NAV BAR STYLING */
+
 nav {
   width: 100%;
   margin: 0 auto;
   border-bottom: 3px solid black;
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1em;
+  justify-content: space-between;
+  /* margin-bottom: 1em; */
   position: fixed;
   background: white;
-}
-
-#abfac {
-  position: fixed;
-  z-index: 1;
-  font-family: "bungee inline";
-  text-decoration: none;
-  font-size: 2em;
-  color: sandybrown;
-  padding: 5px 10px;
+  text-transform: uppercase;
+  align-items: baseline;
 }
 
 nav a {
   text-decoration: none;
-  margin: 1em;
-  text-transform: uppercase;
-  font-size: 0.6em;
   color: brown;
 }
 
+#abfac {
+  font-family: "bungee inline";
+  font-size: 1.5em;
+  color: sandybrown;
+  margin: 5px;
+  margin-left: 5px;
+  min-width: 92px;
+}
+
+nav div {
+  margin: .5em;
+  font-size: .9rem;
+  color: brown;
+  justify-content: space-between;
+}
+
+nav div a {
+  padding: 0 5px 0 5px;
+}
+
 @media screen and (min-width: 768px) {
-  nav {
-    font-size: 1.5em;
+  nav div {
+    font-size: 1.2rem;
   }
   .gallery,
   .profile {
@@ -49,6 +60,8 @@ nav a {
     justify-content: space-around;
   }
 }
+
+/* MAIN STYLING */
 
 h3 {
   padding-bottom: 0.5em;
@@ -150,9 +163,6 @@ figcaption {
 }
 
 @media screen and (max-width: 760px) {
-  #abfac {
-    display: none;
-  }
   .home h1 {
     font-size: 3em;
   }
@@ -265,7 +275,7 @@ figcaption {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
+  main {
     font-size: 90%;
   }
   .team figcaption {
