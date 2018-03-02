@@ -2,7 +2,7 @@
 
 html,
 body {
-  margin: -0.5em 0;
+  margin: 0;
   height: 100%;
   font-family: Montserrat, Helvetica, sans-serif;
   margin-right: auto;
@@ -33,10 +33,10 @@ nav a {
 #abfac {
   font-family: "bungee inline";
   font-size: 1.5em;
-  color: sandybrown;
   margin: 5px;
   margin-left: 5px;
   min-width: 92px;
+  color: #BF5700;
 }
 
 nav div {
@@ -69,6 +69,7 @@ h3 {
   font-family: "Bungee Inline", cursive;
   font-size: 3em;
   color: grey;
+  font-weight: 400;
 }
 
 figure {
@@ -83,7 +84,7 @@ figcaption {
 
 .home {
   margin: auto;
-  padding: 0% 5% 20% 5%;
+  padding: 10% 5% 20% 5%;
   background-color: linen;
 }
 
@@ -92,7 +93,8 @@ figcaption {
   font-family: "Bungee Inline", cursive;
   font-size: 5em;
   margin: 0;
-  color: sandybrown;
+  color: #BF5700;
+  font-weight: 400;
 }
 
 .home p {
@@ -105,9 +107,6 @@ figcaption {
   font-size: 0.7em;
 }
 
-.home figure {
-  display: flex;
-}
 
 #logo img {
   border-radius: 50%;
@@ -119,14 +118,24 @@ figcaption {
 
 @media screen and (max-width: 425px) {
   #logo img {
-    padding-top: 10%;
+    margin-top: 5em;
   }
 }
 
-.about {
-  width: 90%;
-  margin: 20% auto;
+#about, #team, #contact {
+  padding: 10% 0;
 }
+
+
+.about, .team, .contact {
+  width: 90%;
+  margin: 10% auto;
+}
+
+.contact {
+  text-align: center;
+}
+
 
 .about img {
   width: 100%;
@@ -137,17 +146,12 @@ figcaption {
   border-radius: 3px;
 }
 
-.team-bkg {
+#team {
   width: 100%;
   margin: 0;
-  padding: 10% 0;
   background: lavenderblush;
 }
 
-.team {
-  width: 90%;
-  margin: 10% auto;
-}
 
 .team figure img {
   width: 128px;
@@ -169,12 +173,6 @@ figcaption {
   h3 {
     font-size: 2em;
   }
-}
-
-.contact {
-  width: 90%;
-  margin: 20% auto;
-  text-align: center;
 }
 
 #form-email,
@@ -278,7 +276,7 @@ figcaption {
   main {
     font-size: 90%;
   }
-  .team figcaption {
-    font-size: 85%;
-  }
+/*  .team figcaption {
+    font-size: 95%;
+  } */
 }
